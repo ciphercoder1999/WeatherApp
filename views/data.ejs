@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Current weather of <%= place %>
+    </h2>
+    <div class="dataset">
+        <div class="today">
+            <h4>Today's weather</h4>
+            <div class="currenttemp">Current temperature: <%= currtemp %>
+            </div>
+            <div class="feels">Feels like: <%= feels %></div>
+            <div class="humidity">Humidity: <%= humidity %>
+            </div>
+            <div class="weathertype">Weather type: <%= weathertype %>
+            </div>
+            <div class="description">Description: <%= description %>
+            </div>
+        </div>
+        
+        <div class="after">
+            <div class="tomorrow">
+                <h5>Tomorrow's weather at this hour</h5>
+                <div class="currenttemp">Current temperature: <%= currtemp1 %>
+                </div>
+                
+                
+                <div class="humidity">Humidity: <%= humidity1 %>
+                </div>
+                <div class="weathertype">Weather type: <%= weathertype1 %>
+                </div>
+            </div>
+            <div class="dayafter">
+                <h5>Day after tomorrow's weather at this hour</h5>
+                <div class="currenttemp">Current temperature: <%= currtemp2 %>
+                </div>
+                
+                <div class="humidity">Humidity: <%= humidity2 %>
+                </div>
+                <div class="weathertype">Weather type: <%= weathertype2 %>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    <a href="/"><button> Home</button></a>
+    </div>
+    
+</body>
+
+</html>
